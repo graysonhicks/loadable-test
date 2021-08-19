@@ -1,6 +1,6 @@
 ## Purpose
 
-Repo to illustrate HMR failure with `next` version of `gatsby-plugin-loadable-components-ssr` and Gatsby v3.
+Repo to test gatsby-plugin-loadable-components-ssr.
 
 ## Steps to Reproduce
 

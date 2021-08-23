@@ -1,10 +1,9 @@
 import * as React from "react"
-import loadable from "@loadable/component"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Seo from "../components/seo"
-const Layout = loadable(() => import("../components/layout"))
+const Layout = React.lazy(() => import("../components/layout"))
 
 const IndexPage = () => (
   <>

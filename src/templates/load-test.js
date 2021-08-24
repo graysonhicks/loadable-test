@@ -1,5 +1,7 @@
 import React from "react"
-import Carousel from "../components/carousel"
+import loadable from "@loadable/component"
+
+const Carousel = loadable(() => import("../components/carousel"))
 
 export default function LoadTest({ pageContext }) {
   return (

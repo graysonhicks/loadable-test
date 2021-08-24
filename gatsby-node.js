@@ -34,4 +34,17 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
+  const tenThousand = new Array(10000).fill(1)
+
+  tenThousand.forEach((_, i) => {
+    createPage({
+      path: `test-${i}`,
+      component: path.resolve("./src/templates/load-test.js"),
+      context: {
+        hasCarousel: Math.random() < 0.5,
+        index: i,
+      },
+    })
+  })
 }

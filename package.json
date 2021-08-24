@@ -20,7 +20,8 @@
     "prop-types": "^15.7.2",
     "react": "^18.0.0-alpha-bd5bf555e-20210823",
     "react-dom": "^18.0.0-alpha-bd5bf555e-20210823",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-responsive-carousel": "^3.2.21"
   },
   "devDependencies": {
     "gatsby-plugin-perf-budgets": "0.0.18",

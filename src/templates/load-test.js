@@ -1,5 +1,6 @@
 import React from "react"
-import Carousel from "../components/carousel"
+
+const Carousel = React.lazy(() => import("../components/carousel"))
 
 export default function LoadTest({ pageContext }) {
   return (
@@ -7,7 +8,9 @@ export default function LoadTest({ pageContext }) {
       <h1 style={{ textAlign: "center", marginTop: "30px" }}>
         Load Test {pageContext.index}
       </h1>
-      {pageContext.hasCarousel && <Carousel />}
+      <React.Suspense fallback={"Loading..."}>
+        {pageContext.hasCarousel && <Carousel />}
+      </React.Suspense>
     </div>
   )
 }

@@ -43,6 +43,8 @@ exports.createPages = async ({ graphql, actions }) => {
       component: path.resolve("./src/templates/load-test.js"),
       context: {
         hasCarousel: Math.random() < 0.5,
+        hasHeading: Math.random() < 0.5,
+        hasText: Math.random() < 0.5,
         index: i,
       },
     })

@@ -7,7 +7,7 @@
   "dependencies": {
     "gatsby": "^3.12.0",
     "gatsby-plugin-gatsby-cloud": "^2.4.1",
-    "gatsby-plugin-image": "^1.4.0",
+    "gatsby-plugin-image": "^1.12.0",
     "gatsby-plugin-manifest": "^3.4.0",
     "gatsby-plugin-offline": "^4.4.0",
     "gatsby-plugin-react-helmet": "^4.4.0",
@@ -16,8 +16,8 @@
     "gatsby-source-filesystem": "^3.12.0",
     "gatsby-transformer-sharp": "^3.12.0",
     "prop-types": "^15.7.2",
-    "react": "^18.0.0-alpha-bd5bf555e-20210823",
-    "react-dom": "^18.0.0-alpha-bd5bf555e-20210823",
+    "react": "^18.0.0-alpha-46a0f050a-20210828",
+    "react-dom": "^18.0.0-alpha-46a0f050a-20210828",
     "react-helmet": "^6.1.0",
     "react-responsive-carousel": "^3.2.21"
   },

@@ -48,5 +48,17 @@ exports.createPages = async ({ graphql, actions }) => {
         index: i,
       },
     })
+
+    createPage({
+      path: `defer-test-${i}`,
+      component: path.resolve("./src/templates/load-test.js"),
+      defer: true,
+      context: {
+        hasCarousel: Math.random() < 0.5,
+        hasHeading: Math.random() < 0.5,
+        hasText: Math.random() < 0.5,
+        index: i,
+      },
+    })
   })
 }

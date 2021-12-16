@@ -37,12 +37,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-loadable-components-ssr`,
     {
-      resolve: `gatsby-plugin-perf-budgets`,
-      options: {
-        devMode: true,
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

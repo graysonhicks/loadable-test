@@ -26,7 +26,6 @@
     "react-responsive-carousel": "^3.2.22"
   },
   "devDependencies": {
-    "gatsby-plugin-perf-budgets": "0.0.18",
     "prettier": "2.5.1"
   },
   "keywords": [

@@ -12,7 +12,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // see: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise for more info
   const result = await graphql(`
     query {
-      allContentfulBlogPost {
+      allContentfulPageBlogPost {
         edges {
           node {
             id
@@ -23,7 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  result.data.allContentfulBlogPost.edges.forEach(({ node }) => {
+  result.data.allContentfulPageBlogPost.edges.forEach(({ node }) => {
     createPage({
       path: node.slug,
       component: path.resolve(`./src/templates/blog-post.js`),

@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 export default function BlogPost({ data }) {
-  const post = data.contentfulBlogPost
+  const post = data.contentfulPageBlogPost
   return (
     <div>
       <h1>{post.title}</h1>
@@ -9,8 +9,8 @@ export default function BlogPost({ data }) {
   )
 }
 export const query = graphql`
-  query($slug: String!) {
-    contentfulBlogPost(slug: { eq: $slug }) {
+  query ($slug: String!) {
+    contentfulPageBlogPost(slug: { eq: $slug }) {
       title
     }
   }
